@@ -1,0 +1,33 @@
+规则：
+给定一个string,将它转换为另一个string。
+程序的输入是两个文件：
+
+第一个文件保存的是一些规则，用来转换第二个文件中的文本。
+每条规则由两部分组成：一个可能出现在输入文件中的单词和一个用来替换它的短语。
+表示的含义是：每当第一个单词出现在输入中时，我们将它替换成对应的短语。
+
+第二个文件包含要转换的文本。
+
+例：
+如果单词转换文件的内容如下所示：
+brb		be right back
+k		okay?
+y		why
+r		are
+u		you
+pic		picture
+thk		thanks!
+18r		later
+
+
+我们希望转换的文本为:
+where r u
+y dont u send me a pic
+k thk 18r
+
+则生成的输出是:
+where are you
+why dont you send me a picture
+okay?	thanks!		later
+
+
